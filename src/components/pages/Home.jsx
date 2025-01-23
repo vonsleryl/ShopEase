@@ -45,7 +45,7 @@ const Home = () => {
           <img
             src={homeImage}
             alt="Home Decoration"
-            className="w-80 h-80 md:w-[28rem] md:h-[28rem] opacity-90 animate-float"
+            className="w-80 h-80 md:w-[25rem] md:h-[25rem] opacity-90 animate-float"
           />
         </motion.div>
       </section>
