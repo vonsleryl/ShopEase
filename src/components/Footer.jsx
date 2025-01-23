@@ -21,33 +21,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links Section */}
-        <div className="text-center md:text-left">
-          <h4 className="font-semibold text-md mb-2">Quick Links</h4>
-          <ul className="space-y-2">
-            <li>
-              <a href="/home" className="text-sm hover:text-blue-500">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/shop" className="text-sm hover:text-blue-500">
-                Shop
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="text-sm hover:text-blue-500">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="text-sm hover:text-blue-500">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-
         {/* Reach Us Section */}
         <div className="text-center md:text-left">
           <h4 className="font-semibold text-md mb-2">Reach Us</h4>
