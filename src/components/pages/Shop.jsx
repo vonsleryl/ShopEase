@@ -12,7 +12,7 @@ const Shop = () => {
 
   return (
     <div className="bg-gray-100 py-8 px-4">
-      <h1 className="text-center text-3xl font-bold mb-8">Shop Our Products</h1>
+      <h1 className="text-center text-3xl font-bold mb-8">TEMPORARY!!</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {products.map((product) => (
           <div key={product.id} className="bg-white shadow-lg rounded-lg p-4">
