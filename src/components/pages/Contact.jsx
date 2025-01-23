@@ -17,7 +17,7 @@ const Contact = () => {
       ...formData,
       [name]: value,
     });
-    setErrors((prevErrors) => ({ ...prevErrors, [name]: '' })); // Clear the error when typing
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
   };
 
   const validateForm = () => {

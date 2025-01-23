@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutImage from '../../assets/images/about.png';
 
 const About = () => {
   return (
@@ -19,22 +20,14 @@ const About = () => {
             Thank you for choosing us as your trusted shopping partner. We're here to make your life easier, one purchase at a time!
           </p>
           {/* Call-to-action */}
-          <div className="mt-6">
-            <a
-              href="/shop"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition duration-300"
-            >
-              Start Shopping
-            </a>
-          </div>
         </div>
 
         {/* Right Side: Image */}
         <div className="flex justify-center">
-          <img
-            src="/assets/images/about-us.jpg" // Replace with your actual image path
+           <img
+            src={aboutImage} // Replace with your actual image path
             alt="About ShopEase"
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-100 h-100"
           />
         </div>
       </div>

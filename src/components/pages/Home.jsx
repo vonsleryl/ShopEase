@@ -1,11 +1,11 @@
 import React from 'react';
-import homeImage from '../../assets/images/home.png'; // Ensure correct path
-import { Swiper, SwiperSlide } from 'swiper/react'; // Import Swiper components
-import 'swiper/css'; // Correct import for swiper styles
-import 'swiper/css/pagination'; // If you're using pagination
-import 'swiper/css/navigation'; // If you're using navigation
-import { motion } from 'framer-motion'; // Import motion from framer-motion
-import { FaBoxOpen, FaShippingFast, FaHeadset } from 'react-icons/fa'; // Importing icons
+import homeImage from '../../assets/images/home.png'; 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; 
+import 'swiper/css/pagination'; 
+import 'swiper/css/navigation'; 
+import { motion } from 'framer-motion'; 
+import { FaBoxOpen, FaShippingFast, FaHeadset } from 'react-icons/fa'; 
 
 const Home = () => {
   return (
