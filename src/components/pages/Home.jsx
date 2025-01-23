@@ -5,10 +5,11 @@ import 'swiper/css'; // Correct import for swiper styles
 import 'swiper/css/pagination'; // If you're using pagination
 import 'swiper/css/navigation'; // If you're using navigation
 import { motion } from 'framer-motion'; // Import motion from framer-motion
+import { FaBoxOpen, FaShippingFast, FaHeadset } from 'react-icons/fa'; // Importing icons
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-blue-400 via-indigo-1000 to-blue-800 text-white mb-12 sm:mb-16 md:mb-2 text-gray-7000">
+    <div className="relative min-h-screen bg-gradient-to-br from-blue-400 via-indigo-1000 to-blue-800 text-white mb-12 sm:mb-16 md:mb-2 text-gray-700">
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mx-auto px-6 py-12">
         {/* Slogan Content */}
@@ -49,119 +50,96 @@ const Home = () => {
         </motion.div>
       </section>
 
-        {/* Features Section */}
-        <section className="mt-12 w-full max-w-6xl mx-auto px-6 min-h-[250px]">
+      {/* Features Section */}
+      <section className="mt-12 w-full max-w-6xl mx-auto px-6 min-h-[330px]">
         <h2 className="text-2xl font-semibold text-center mb-8">Why Choose Us?</h2>
 
         {/* Swiper Carousel for mobile and tablet screens */}
         <div className="md:hidden">
-            <Swiper
-            spaceBetween={20}
-            slidesPerView={1}
-            loop={true}
-            pagination={{ clickable: true }}
-            >
+          <Swiper spaceBetween={20} slidesPerView={1} loop={true} pagination={{ clickable: true }}>
             {/* Feature 1 */}
             <SwiperSlide>
-                <motion.div
-                className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl"
+              <motion.div
+                className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl flex flex-col items-center"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                style={{
-                    perspective: '1000px',
-                    animation: 'float 3s ease-in-out infinite',
-                }}
-                >
+              >
+                <FaBoxOpen className="text-blue-600 text-4xl mb-4" />
                 <h3 className="font-semibold text-lg mb-2 text-gray-700">Quality Products</h3>
                 <p className="text-gray-600">We offer top-quality products to meet your needs.</p>
-                </motion.div>
+              </motion.div>
             </SwiperSlide>
 
             {/* Feature 2 */}
             <SwiperSlide>
-                <motion.div
-                className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl"
+              <motion.div
+                className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl flex flex-col items-center"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                style={{
-                    perspective: '1000px',
-                    animation: 'float 3s ease-in-out infinite',
-                }}
-                >
+              >
+                <FaShippingFast className="text-blue-600 text-4xl mb-4" />
                 <h3 className="font-semibold text-lg mb-2 text-gray-700">Fast Shipping</h3>
                 <p className="text-gray-600">Enjoy quick and reliable delivery to your doorstep.</p>
-                </motion.div>
+              </motion.div>
             </SwiperSlide>
 
             {/* Feature 3 */}
             <SwiperSlide>
-                <motion.div
-                className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl"
+              <motion.div
+                className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl flex flex-col items-center"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                style={{
-                    perspective: '1000px',
-                    animation: 'float 3s ease-in-out infinite',
-                }}
-                >
+              >
+                <FaHeadset className="text-blue-600 text-4xl mb-4" />
                 <h3 className="font-semibold text-lg mb-2 text-gray-700">Customer Support</h3>
                 <p className="text-gray-600">We're here to assist you every step of the way.</p>
-                </motion.div>
+              </motion.div>
             </SwiperSlide>
-            </Swiper>
+          </Swiper>
         </div>
 
         {/* Grid Layout for larger screens */}
         <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Feature 1 */}
-            <motion.div
-            className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl"
+          {/* Feature 1 */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl flex flex-col items-center"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            style={{
-                perspective: '1000px',
-                animation: 'float 3s ease-in-out infinite',
-            }}
-            >
+          >
+            <FaBoxOpen className="text-blue-600 text-4xl mb-4" />
             <h3 className="font-semibold text-lg mb-2 text-gray-700">Quality Products</h3>
             <p className="text-gray-600">We offer top-quality products to meet your needs.</p>
-            </motion.div>
+          </motion.div>
 
-            {/* Feature 2 */}
-            <motion.div
-            className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl"
+          {/* Feature 2 */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl flex flex-col items-center"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            style={{
-                perspective: '1000px',
-                animation: 'float 3s ease-in-out infinite',
-            }}
-            >
+          >
+            <FaShippingFast className="text-blue-600 text-4xl mb-4" />
             <h3 className="font-semibold text-lg mb-2 text-gray-700">Fast Shipping</h3>
             <p className="text-gray-600">Enjoy quick and reliable delivery to your doorstep.</p>
-            </motion.div>
+          </motion.div>
 
-            {/* Feature 3 */}
-            <motion.div
-            className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl"
+          {/* Feature 3 */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-4 hover:scale-105 hover:shadow-2xl flex flex-col items-center"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            style={{
-                perspective: '1000px',
-                animation: 'float 3s ease-in-out infinite',
-            }}
-            >
+          >
+            <FaHeadset className="text-blue-600 text-4xl mb-4" />
             <h3 className="font-semibold text-lg mb-2 text-gray-700">Customer Support</h3>
             <p className="text-gray-600">We're here to assist you every step of the way.</p>
-            </motion.div>
+          </motion.div>
         </div>
-        </section>
+      </section>
     </div>
   );
 };
