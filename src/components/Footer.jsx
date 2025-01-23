@@ -26,7 +26,16 @@ const Footer = () => {
           <h4 className="font-semibold text-md mb-2">Reach Us</h4>
           <p className="text-sm mb-2">Email: vonsleryligot0@gmail.com</p>
           <p className="text-sm mb-2">Phone: 09474127696</p>
-          <p className="text-sm mb-2">Address: 8XC9+WWF, Ibabao, Lapu-Lapu City, Cebu</p>
+          <p className="text-sm mb-2">
+            Address: <a 
+              href="https://www.google.com/maps/search/?q=8XC9+WWF,+Ibabao,+Lapu-Lapu+City,+Cebu" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-500 hover:underline"
+            >8XC9+WWF, Ibabao, Lapu-Lapu City, Cebu
+            </a>
+          </p>
+
         </div>
 
         {/* Social Media Section */}

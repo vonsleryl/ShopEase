@@ -50,7 +50,7 @@ const Home = () => {
       </section>
 
         {/* Features Section */}
-        <section className="mt-12 w-full max-w-6xl mx-auto px-6">
+        <section className="mt-12 w-full max-w-6xl mx-auto px-6 min-h-[250px]">
         <h2 className="text-2xl font-semibold text-center mb-8">Why Choose Us?</h2>
 
         {/* Swiper Carousel for mobile and tablet screens */}
