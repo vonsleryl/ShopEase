@@ -1,0 +1,10 @@
+# netlify.toml
+[build]
+  command = "npm run build"  # Your build command, typically `npm run build` for Vite
+  publish = "dist"           # Output directory for the built files
+
+# Optional: settings for specific Netlify features
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
