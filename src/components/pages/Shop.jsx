@@ -192,16 +192,17 @@ const Shop = () => {
               </button>
             )}
 
-            {hasSelectedFilters && (
-              <button
-                className="w-2/2 bg-red-500 text-white py-2 px-2 rounded-lg hover:bg-red-600 flex items-center justify-center text-sm"
-                onClick={clearAllSelections}
-              >
-                <FaTrashAlt className="mr-2" />
-                Clear All
-              </button>
+        {hasSelectedFilters && (
+            <button
+              className="w-2/2 bg-red-500 text-white py-2 px-2 rounded-lg hover:bg-red-600 flex items-center justify-center text-sm"
+              onClick={clearAllSelections}
+            >
+              <FaTrashAlt className="mr-2" />
+              Clear All
+            </button>
             )}
           </div>
+          
         </div>
 
         {/* Main content */}
