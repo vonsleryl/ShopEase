@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Shopcontent from '../../components/pages/subpages/shopcontent';
-import { FaTrashAlt } from 'react-icons/fa'; // Import the trash icon
+import Shopcontent from '../../components/pages/subpages/Shopcontent';
+import { FaTrashAlt } from 'react-icons/fa';
 
 const Shop = () => {
   const categories = [
